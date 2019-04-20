@@ -25,14 +25,7 @@ class Add extends Component {
 		};
 		
 		this.props.addThread(thread);
-	}
-	
-	componentWillReceiveProps(nextProps) {
-			this.props.history.push('/list');
-	}
-
-	componentDidMount() {
-			this.props.history.push('/list');
+		this.props.history.push('/list');
 	}
 
   render() {
